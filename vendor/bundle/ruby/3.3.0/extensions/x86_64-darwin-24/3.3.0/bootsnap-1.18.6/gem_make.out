@@ -1,0 +1,22 @@
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+/Users/tomaszdebek/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-wdbbbw sitelibdir\=./.gem.20250524-20989-wdbbbw clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-wdbbbw sitelibdir\=./.gem.20250524-20989-wdbbbw
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-wdbbbw sitelibdir\=./.gem.20250524-20989-wdbbbw install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20250524-20989-wdbbbw/bootsnap
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.18.6/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-wdbbbw sitelibdir\=./.gem.20250524-20989-wdbbbw clean

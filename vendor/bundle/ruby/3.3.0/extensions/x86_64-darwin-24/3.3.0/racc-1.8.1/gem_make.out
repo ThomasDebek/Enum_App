@@ -1,0 +1,18 @@
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/tomaszdebek/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-7lfxvg sitelibdir\=./.gem.20250524-20989-7lfxvg clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-7lfxvg sitelibdir\=./.gem.20250524-20989-7lfxvg
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-7lfxvg sitelibdir\=./.gem.20250524-20989-7lfxvg install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250524-20989-7lfxvg/racc
+
+current directory: /Users/tomaszdebek/Applications_M1/Indigo/Enum_App/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250524-20989-7lfxvg sitelibdir\=./.gem.20250524-20989-7lfxvg clean
