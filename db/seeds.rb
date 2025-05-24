@@ -1,9 +1,10 @@
-Product.delete_all
+Product.destroy_all
 
 Product.create!([
-                  { name: "Red T-shirt", price: 19.99, status: :available },
-                  { name: "Blue Jeans", price: 49.99, status: :out_of_stock },
-                  { name: "Sneakers", price: 79.99, status: :available },
-                  { name: "Leather Jacket", price: 129.99, status: :discontinued },
-                  { name: "Cap", price: 14.99, status: :available }
+                  { name: "Rocket Pen", price: 19.99, status: :pending },
+                  { name: "Zero Gravity Chair", price: 149.99, status: :in_progress },
+                  { name: "Hoverboard", price: 299.99, status: :completed },
+                  { name: "Smart Glasses", price: 89.99, status: :canceled },
+                  { name: "Portable Solar Charger", price: 45.00, status: :pending },
+                  { name: "Mini Drone", price: 129.99, status: :completed },
                 ])
