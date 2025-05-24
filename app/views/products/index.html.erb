@@ -1,30 +1,36 @@
-<% content_for :title, "Products" %>
+<h1 class="font-bold text-4xl text-gray-900 dark:text-white mb-5">Products</h1>
 
-<div class="w-full">
-  <% if notice.present? %>
-    <p class="py-2 px-3 mb-5 bg-green-50 text-green-700 dark:bg-green-800 dark:text-green-100 font-medium rounded-md inline-block" id="notice">
-      <%= notice %>
-    </p>
-  <% end %>
+<%= link_to "New Product", new_product_path,
+            class: "mb-5 inline-block rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium" %>
 
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl text-gray-900 dark:text-white">Products</h1>
-    <%= link_to "New product", new_product_path,
-                class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium" %>
-  </div>
-
-  <div id="products" class="min-w-full mt-6">
-    <% if @products.any? %>
-      <% @products.each do |product| %>
-        <%= render product %>
-        <p class="mt-2">
-          <%= link_to "Show this product", product,
-                      class: "ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white inline-block font-medium"
-          %>
+<div class="flex-grow">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <% @products.each do |product| %>
+      <div id="<%= dom_id(product) %>" class="border rounded-md p-4 shadow hover:shadow-lg transition duration-150">
+        <p class="my-2">
+          <strong class="block font-medium mb-1">Name:</strong>
+          <%= product.name %>
         </p>
-      <% end %>
-    <% else %>
-      <p class="text-center my-10 text-gray-700 dark:text-gray-300">No products found.</p>
+        <p class="my-2">
+          <strong class="block font-medium mb-1">Price:</strong>
+          <%= number_to_currency(product.price) %>
+        </p>
+        <p class="my-2 flex items-center">
+          <strong class="block font-medium mr-1">Status:</strong>
+          <%= status_icon(product.status) %>
+          <span><%= product.status.humanize %></span>
+        </p>
+
+        <div class="mt-4 space-x-2">
+          <%= link_to "Show", product_path(product),
+                      class: "rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white inline-block font-medium" %>
+          <%= link_to "Edit", edit_product_path(product),
+                      class: "rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white inline-block font-medium" %>
+          <%= button_to "Destroy", product_path(product), method: :delete,
+                        data: { confirm: "Are you sure?" },
+                        class: "rounded-md px-3.5 py-2.5 bg-red-600 hover:bg-red-500 text-white font-medium inline-block" %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>

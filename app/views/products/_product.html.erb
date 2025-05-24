@@ -9,6 +9,7 @@
   </p>
   <p class="my-5">
     <strong class="block font-medium mb-1">Status:</strong>
-    <%= product.status %>
+    <%= status_icon(product.status) %>
+    <%= product.status.humanize %>
   </p>
 </div>
